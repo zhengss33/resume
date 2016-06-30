@@ -1,0 +1,278 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, section, article, aside, header, footer, nav, dialog, figure, menu, hgroup, iframe {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    border: 0;
+}
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #3c3c3c;
+    background: #fff;
+}
+.section{
+    min-width: 1000px;
+}
+.section h2{
+    position: relative;
+    width: 150px;
+    margin:0 auto 60px;
+    color: #333;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.section h2 i{
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    background: #5ec2e7;
+}
+
+
+.section1{
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.section1 .desc h1{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 3px 3px 2px #54aecf;
+    opacity: 0;
+}
+.section1 .desc h1 i{
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    background:#fff;
+}
+.section1 .desc .top{
+    top: 0;
+    left: 0;
+}
+.section1 .desc .bottom{
+    bottom: 0;
+    right: 0;
+}
+.section1 .desc span{
+    display: block;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.section1 .desc .email{
+    margin-top: 20px;
+    font-size: 25px;
+    text-shadow: 3px 3px 2px #54aecf;
+    opacity: 0;
+}
+.section1 .icon-bg li{
+    position: absolute;  
+}
+.section1 .think{
+    width: 125px;
+    height: 125px;
+    top: 0; 
+    left: 40%;
+    background: url(../images/think.png) no-repeat;
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+.section1 .post{
+    width: 145px;
+    height: 145px;
+    top: 0; 
+    right: 0;
+    background: url(../images/post.png) no-repeat;
+    opacity: 0;
+}
+.section1 .iphone{
+    width: 137px;
+    height: 222px;
+    bottom: 100px;
+    right: 102px;
+    background: url(../images/iPhone.png) no-repeat;
+}
+.section1 .polaroid{
+    width: 183px;
+    height: 188px;
+    top: 70px; 
+    left: 20px;
+    background: url(../images/polaroid.png) no-repeat;
+    opacity: 0;
+}
+.section1 .notebook{
+    width: 448px;
+    height: 398px;
+    bottom: -400px;
+    right: 200px;
+    background: url(../images/notebook.png) no-repeat;
+}
+.section1 .earphones{
+    width: 447px;
+    height: 408px;
+    background: url(../images/earphones.png) no-repeat;
+    bottom: -200px;
+    left: 100px;
+}
+
+
+.section2 .inner{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+.section2 .inner .item{
+    position: absolute;
+    width: 280px;
+    height: 387px;
+    left: 0;
+    bottom: -390px;
+    box-shadow: 3px 5px 8px #888;
+    overflow: auto;
+}
+.section2 .inner .xuhe-pc{
+    background: url(../images/xuhe-pc.jpg) no-repeat center top;
+}
+.section2 .inner .xuhe-mobile{
+    left: 355px;
+    background: url(../images/xuhe-mobile.jpg) no-repeat center top;
+}
+.section2 .inner .zhonglian{
+    left: 715px;
+    background: url(../images/zhonglian.jpg) no-repeat center top;
+}
+
+
+.section3 .inner{
+    width: 1000px;
+    margin: 100px auto 0;
+}
+.section3-item{
+    float: left;
+    width: 183px;
+    height: 183px;
+    margin-right: 21px;
+    border-radius: 50%;
+}
+.section3-ps{
+    background: url(../images/skill_ps.png) no-repeat center center;
+}
+.section3-html{
+    background: url(../images/skill_html.png) no-repeat center center;
+}
+.section3-css{
+    background: url(../images/skill_css.png) no-repeat center center;
+}
+.section3-js{
+    background: url(../images/skill_js.png) no-repeat center center;
+}
+.section3-jq{
+    background: url(../images/skill_jq.png) no-repeat center center;
+    margin-right: 0;
+}
+
+.section4 .work-time{
+    float: left;
+    position: relative;
+    width: 2px;
+    height: 530px;
+    margin-left: 30%;
+    background: #ccc;
+}
+.section4 .work-time span{
+    position: absolute;
+    left: -13px;
+    z-index: 100;
+    width: 25px;
+    height: 25px;
+    background: #f6f6f6;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+.section4 .work-time .time-line1{ top: 100px;}
+.section4 .work-time .time-line1:before{
+    content: "2015";
+    font-size: 16px;
+    text-indent: -10px;
+    display: block;
+    background: #f4f4f4;
+    margin-top: -65px;
+}
+.section4 .work-time .time-line2{ top: 250px; }
+.section4 .work-time .time-line2:before{
+    content: "2014";
+    font-size: 16px;
+    text-indent: -10px;
+    display: block;
+    background: #f4f4f4;
+    margin-top: -65px;
+}
+.section4 .work-time .time-line3{ top: 400px; }
+.section4 .work-time .time-line3:before{
+    content: "2013";
+    font-size: 16px;
+    text-indent: -10px;
+    display: block;
+    background: #f4f4f4;
+    margin-top: -65px;
+}
+.section4 .work-exp{
+    float: left;
+    width: 60%;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.section4 .work-exp .work-item{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 100%;
+}
+.section4 .work-exp .work-item ul li{
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+.section4 .work-item ul li h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+.section4 .work-item ul li p{
+    font-size: 16px;
+    color: #999;
+}
+
+
+.section5 h2{
+    margin: 20px auto 5px;
+    font-size: 30px;
+    color: #fff;
+}
+.section5 span{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    text-shadow: 3px 3px 2px #54aecf;
+}
+.section5 .email{
+    margin-left: -150%;
+}
+.section5 .phone{
+    margin-right: -150%;
+}
