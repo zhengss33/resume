@@ -86,7 +86,7 @@
     <script>
         $(function(){
             $("#fullpage").fullpage({
-                sectionsColor: ['#5ec2e7','#f4f4f4','#fbfbfb','#f4f4f4','#5ec2e7'],
+                sectionsColor: ['#5ec2e7','#9ed769','#fbfbfb','#ffe400','#5ec2e7'],
                 navigation: true,
                 css3: true,
                 scrollingSpeed: 1000,
@@ -106,12 +106,12 @@
                             break;
 
                         case 2:
-                            $.fn.fullpage.setAllowScrolling(false,'all');
+                            $.fn.fullpage.setAllowScrolling(false);
                             move('.section2 h2 i').set('width','150px').duration('0.5s').end();
                             move('.section2 .inner .xuhe-pc').y(-400).end(function(){
                                 move('.section2 .inner .xuhe-mobile').y(-400).end(function(){
                                     move('.section2 .inner .zhonglian').y(-400).end(function(){
-                                        $.fn.fullpage.setAllowScrolling(true,'all');
+                                        $.fn.fullpage.setAllowScrolling(true);
                                     });
                                 });
                             });
@@ -157,6 +157,7 @@
                             break;
 
                         case 2:
+                            $.fn.fullpage.setAllowScrolling(true);
                             move('.section2 h2 i').set('width',0).end();
                             move('.section2 .inner .xuhe-pc').y(0).end();
                             move('.section2 .inner .xuhe-mobile').y(0).end();
