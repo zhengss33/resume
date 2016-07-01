@@ -51,7 +51,7 @@ $(function(){
                 move('.section5 .email').ease('cubic-bezier(0.5,0,0.5,1)').set('margin-left',0).set('opacity',1).end();
                 move('.section5 .phone').ease('cubic-bezier(0.5,0,0.5,1)').set('margin-right',0).set('opacity',1).end();
                 move('.section5 .contact .pdf').ease('ease-in-out').set('margin-top',0).set('opacity',1).duration('1s').end();
-                move('.section5 .contact .md').ease('ease-in-out').set('margin-top',0).set('opacity',1).duration('1s').end();
+                move('.section5 .contact .md').ease('ease-in-out').set('margin-top',0).set('opacity',1).duration('1s').delay('0.5s').end();
                 break;
 
                 default:
