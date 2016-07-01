@@ -29,9 +29,11 @@
         <div class="section section2">
             <h2>项目经验<i></i></h2>
             <div class="inner">
-                <div class="item xuhe-pc"></div>
-                <div class="item xuhe-mobile"></div>
-                <div class="item zhonglian"></div>
+                <div class="item xuhe-pc">
+                    <a href="http://zhengss33.github.io/xuhe/" target="_blank" title="旭和健康(PC)"></a>
+                </div>
+                <div class="item xuhe-mobile"><a href="http://zhengss33.github.io/xuhe-mobile/" target="_blank" title="旭和健康(mobile)"></a></div>
+                <div class="item zhonglian"><a href="http://zhengss33.github.io/zhonglian/" target="_blank" title="中联(响应式)"></a></div>
             </div>
         </div>
         <div class="section section3">
@@ -61,7 +63,7 @@
                 </div>
                 <div class="work-item item2">
                     <ul>
-                        <li><h3>UC优视科技</h3></li>
+                        <li><h3>阿里巴巴移动事业群</h3></li>
                         <li>助理产品经理</li>
                         <li><p>负责对雀彩网各种彩种的出票情况的维护、数据录入。及时处理网站系统异常，协助研发人员修复问题。负责与出票商沟通及往来业务核算，统计业务相关数据报表。</p></li>
                     </ul>
@@ -77,121 +79,17 @@
         </div>
         <div class="section section5">
             <h2>联系方式</h2>
-            <span class="email">E-mail： zhengss332@gmail.com</span>
-            <span class="phone">phone： 15102019431</span>
+            <ul class="contact">
+                <li class="email">E-mail： zhengss332@gmail.com</li>
+                <li class="phone">phone： 15102019431</li>
+                <li class="pdf"><a href="images/zhengss.pdf" target="_blank">pdf简历下载</a></li>
+                <li class="md"><a href="http://zhengss.deercv.com/"  target="_blank">Markdown简历</a></li>
+            </ul>
         </div>
     </div>
 
     <script src="js/move.min.js"></script>
-    <script>
-        $(function(){
-            $("#fullpage").fullpage({
-                sectionsColor: ['#5ec2e7','#9ed769','#fbfbfb','#ffe400','#5ec2e7'],
-                navigation: true,
-                css3: true,
-                scrollingSpeed: 1000,
-                easing: 'easeInQuart',
-                afterLoad:function(link,index){
-                    switch (index){
-                        case 1:
-                            move('.section1 .desc h1').set('opacity','1').scale(1.2).duration('0.5s').end();
-                            move('.section1 .desc .email').set('opacity','1').duration('0.5s').end();
-                            move('.section1 .desc .bottom').set('width','300px').set('opacity','1').end();
-                            move('.section1 .desc .top').set('width','300px').set('opacity','1').end();
-                            move('.section1 .think').rotate(10).set('opacity','1').end();
-                            move('.section1 .post').translate(-200,90).set('opacity','1').end();
-                            move('.section1 .polaroid').set('opacity','1').end();
-                            move('.section1 .notebook').y(-190).end();
-                            move('.section1 .earphones').rotate(30).end();
-                            break;
-
-                        case 2:
-                            $.fn.fullpage.setAllowScrolling(false);
-                            move('.section2 h2 i').set('width','150px').duration('0.5s').end();
-                            move('.section2 .inner .xuhe-pc').y(-400).end(function(){
-                                move('.section2 .inner .xuhe-mobile').y(-400).end(function(){
-                                    move('.section2 .inner .zhonglian').y(-400).end(function(){
-                                        $.fn.fullpage.setAllowScrolling(true);
-                                    });
-                                });
-                            });
-                            break;
-
-                        case 3:
-                            move('.section3 h2 i').set('width','150px').duration('0.5s').end();
-                            move('.section3 .section3-ps').rotate(360).end();
-                            move('.section3 .section3-html').rotate(360).delay('0.1s').end();
-                            move('.section3 .section3-css').rotate(360).delay('0.2s').end();
-                            move('.section3 .section3-js').rotate(360).delay('0.3s').end();
-                            move('.section3 .section3-jq').rotate(360).delay('0.4s').end();
-                            break;
-
-                        case 4:
-                            move('.section4 h2 i').set('width','150px').duration('0.5s').end();
-                            move('.section4 .work-exp .item1').set('margin-left',0).end();
-                            move('.section4 .work-exp .item2').set('margin-left',0).delay('0.1s').end();
-                            move('.section4 .work-exp .item3').set('margin-left',0).delay('0.2s').end();
-                            break;
-
-                        case 5:
-                            move('.section5 .email').ease('cubic-bezier(0.5,0,0.5,1)').set('margin-left',0).set('opacity',1).end();
-                            move('.section5 .phone').ease('cubic-bezier(0.5,0,0.5,1)').set('margin-right',0).set('opacity',1).end();
-                            break;
-
-                        default:
-                            break;
-                    }
-                },
-                onLeave:function(index){
-                    switch (index){
-                        case 1:
-                            move('.section1 .desc h1').set('opacity','0').scale(1).end();
-                            move('.section1 .desc .email').set('opacity','0').end();
-                            move('.section1 .desc .bottom').set('width',0).set('opacity','0').end();
-                            move('.section1 .desc .top').set('width',0).set('opacity','0').end();
-                            move('.section1 .think').rotate(0).set('opacity','0').end();
-                            move('.section1 .post').translate(0,0).set('opacity','0').end();
-                            move('.section1 .polaroid').set('opacity','0').end();
-                            move('.section1 .notebook').y(0).end();
-                            move('.section1 .earphones').rotate(0).end();
-                            break;
-
-                        case 2:
-                            $.fn.fullpage.setAllowScrolling(true);
-                            move('.section2 h2 i').set('width',0).end();
-                            move('.section2 .inner .xuhe-pc').y(0).end();
-                            move('.section2 .inner .xuhe-mobile').y(0).end();
-                            move('.section2 .inner .zhonglian').y(0).end();
-                            break;
-
-                        case 3:
-                            move('.section3 h2 i').set('width',0).end();
-                            move('.section3 .section3-ps').rotate(0).end();
-                            move('.section3 .section3-html').rotate(0).end();
-                            move('.section3 .section3-css').rotate(0).end();
-                            move('.section3 .section3-jq').rotate(0).end();
-                            move('.section3 .section3-js').rotate(0).end();
-                            break;
-
-                        case 4:
-                            move('.section4 h2 i').set('width',0).end();
-                            move('.section4 .work-exp .item1').set('margin-left','100%').end();
-                            move('.section4 .work-exp .item2').set('margin-left','100%').end();
-                            move('.section4 .work-exp .item3').set('margin-left','100%').end();
-                            break;
-
-                        case 5:
-                            move('.section5 .email').set('margin-left','-150%').set('opacity',0).end();
-                            move('.section5 .phone').set('margin-right','-150%').set('opacity',0).end();
-                            break;
-
-                        default:
-                            break;
-                    }
-                }
-            });
-});
-</script>
+    <script src="js/resume.js"></script>
 
 </body>
 </html>
