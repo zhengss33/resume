@@ -212,10 +212,12 @@ body {
 }
 .section4 .work-time .time-line1{ top: 100px;}
 .section4 .work-time .time-line2{ top: 250px; }
+.section4 .work-time .time-line1:before{  content: "2015"; }
+.section4 .work-time .time-line2:before{  content: "2014"; }
+.section4 .work-time .time-line3:before{ content: "2013";}
 .section4 .work-time .time-line1:before,
 .section4 .work-time .time-line2:before,
 .section4 .work-time .time-line3:before{
-    content: "2014";
     display: block;
     margin-top: -65px;
     font-size: 16px;
@@ -223,6 +225,7 @@ body {
     color: #333;
     background: #ffe400;
 }
+
 .section4 .work-time .time-line3{ top: 400px; }
 .section4 .work-exp{
     float: left;
